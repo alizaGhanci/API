@@ -1,0 +1,4 @@
+# Documentation for Joke Display Web Application
+
+## Overview
+This document provides an overview of the code for a simple web application that retrieves and displays jokes using HTML, CSS, and JavaScript. The application features a responsive design and a button to fetch new jokes from an API.

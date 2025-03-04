@@ -1,0 +1,109 @@
+
+/* This universial selector  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* this css style on htmls tags */
+.containers {
+  background: rgb(78, 209, 113);
+  background: linear-gradient(
+    167deg,
+    rgba(78, 209, 113, 1) 0%,
+    rgba(225, 236, 40, 1) 100%
+  );
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url(mesh-276.png);
+  background-repeat: no-repeat;
+  background-attachment: fit-content;
+  background-size: cover;
+  width: 40%;
+  height: 550px;
+  border-radius: 50px;
+}
+.emoji {
+  font-size: 8em;
+}
+.joke-btn {
+  font-size: 2em;
+  border-radius: 6px;
+  font-family: cursive;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  word-spacing: 2;
+}
+.joke-btn:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 2s;
+}
+.joke {
+  font-size: 2em;
+  color: white;
+}
+img {
+  width: 27px;
+  object-fit: cover;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(300deg);
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    width: 70%;
+    height: 500px;
+  }
+
+  .emoji {
+    font-size: 5em;
+  }
+
+  .joke-btn {
+    font-size: 1.2em;
+  }
+
+  .joke {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 576px) {
+  .box {
+    width: 90%;
+    height: 450px;
+  }
+
+  .emoji {
+    font-size: 4em;
+  }
+
+  .joke-btn {
+    font-size: 1.5em;
+  }
+
+  .joke {
+    font-size: 1.5em;
+  }
+}
